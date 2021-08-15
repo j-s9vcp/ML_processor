@@ -406,9 +406,9 @@ else:
 
             fig4 = vasualizaiton_with_size(pls_data, 'type', domain, all_range_)
             if len(selected_test_df) <= 24:
-                col1.dataframe(selected_test_df.style.applymap(pred_color, subset=['pred']),width=350,height=len(selected_test_df)*50)
+                col1.dataframe(selected_test_df.style.applymap(pred_color, subset=['pred']),width=370,height=len(selected_test_df)*50)
             else:
-                col1.dataframe(selected_test_df.style.applymap(pred_color, subset=['pred']),width=350,height=12*50)
+                col1.dataframe(selected_test_df.style.applymap(pred_color, subset=['pred']),width=370,height=12*50)
             col2.altair_chart(fig4)
 
         else:
